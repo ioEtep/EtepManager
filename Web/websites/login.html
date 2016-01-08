@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="lang" content="pt-br">
+    <link rel="stylesheet" href="../css/master.css" media="screen" type="text/css">
+    <title>Etep</title>
+  </head>
+  <body>
+    <style>
+      #input-button-verificar{
+        height: 60px;
+        width: 200px;
+
+        font-size: 18px;
+        transition: color 0.5s, transform 0.2s, background-color 0.2s;
+        outline: none;
+        border-radius: 8px;
+        margin: 10px 50px 0 50px;
+        padding:13px 30px 13px 30px;
+        border: 3px solid transparent;
+        background-color: #2e4369;
+        color:white;
+      }
+
+      #input-button-verificar:hover{
+        color:#cf7b39;
+      }
+
+      #input-button-verificar:active{
+        background-color:#cf7b39;
+        color:white;
+      }
+
+      img{
+        position: absolute;
+        left:50%;
+        margin-left:-110px;
+        margin-top:-5px;
+      }</style>
+    <script>
+      function validate(){
+        var nome = document.getElementById("input-text-name").value;
+        var email = document.getElementById("input-text-email").value;
+        var ra = document.getElementById("input-text-ra").value;
+        var password = document.getElementById("input-password").value;
+      }
+    </script>
+    <?php
+      echo "caiobep";
+    ?>
+    <img src="resources/etep-logo.png" width="60px" height="50px" id=etep-logo/>
+    <h1><span id=io>io.</span><span id=etep>Etep</span></h1>
+    <form class="welcome-screen" action="index.html" method="post">
+      <input type="text" id="input-text-name" placeholder="Nome">
+      <input type="email" id="input-text-email" placeholder="email">
+      <input type="text" id="input-text-ra" placeholder="RA">
+      <input type="password" id="input-password" placeholder="Senha">
+      <input type="button" id="input-button-verificar" value="Entrar" onclick="validate()"/>
+      <a href="websites/404.html">Esqueci minha Senha</a>
+    </form>
+  </body>
+</html>

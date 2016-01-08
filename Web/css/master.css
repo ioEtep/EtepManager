@@ -14,7 +14,7 @@ body{
 }
 
 a{
-  margin-left: 70%;
+  margin-left: 35%;
   text-decoration: none;
 
   font-family: 'Open Sans', sans-serif;
@@ -52,7 +52,19 @@ h1{
 
   margin:10px;
 
-  border-radius: .8;
+  border-radius: 3px;
+  border: solid 2px rgb(204, 204, 204);
   font-size: 1.2em;
+  font-weight: 300;
+}
+
+input:focus{
+  outline-style: none;
+
+  border: solid 2px #cf7b39;
+}
+
+#input-button-verificar{
+  font-family:'Helvetica Neue';
   font-weight: 300;
 }
